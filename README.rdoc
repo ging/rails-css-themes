@@ -1,0 +1,3 @@
+= Rails-css-themes
+
+This project rocks and uses MIT-LICENSE.
