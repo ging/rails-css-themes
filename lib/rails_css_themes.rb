@@ -8,3 +8,5 @@ module RailsCssThemes
     end
   end
 end
+
+require 'rails_css_themes/helpers/asset_tag_helper'
