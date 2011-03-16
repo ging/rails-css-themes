@@ -1,0 +1,1 @@
+../../../../lib/generators/rails_css_themes/templates/initializer.rb

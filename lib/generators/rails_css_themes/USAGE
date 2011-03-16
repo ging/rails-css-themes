@@ -1,0 +1,5 @@
+Description:
+    Add support for CSS themes
+
+Example:
+    rails generate install rails_css_themes:install
