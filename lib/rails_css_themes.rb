@@ -1,4 +1,8 @@
 module RailsCssThemes
+  module Helpers
+    autoload :AssetTagHelper, 'rails_css_themes/helpers/asset_tag_helper'
+  end
+
   mattr_accessor :theme
   @@theme = :default
 
@@ -9,4 +13,10 @@ module RailsCssThemes
   end
 end
 
-require 'rails_css_themes/helpers/asset_tag_helper'
+class Railtie < ::Rails::Railtie
+  config.to_prepare do
+    ApplicationHelper.module_eval do
+      include RailsCssThemes::Helpers::AssetTagHelper
+    end
+  end
+end

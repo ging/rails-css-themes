@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ActionView::Helpers::AssetTagHelper do
+describe ApplicationHelper do
   describe "#stylesheet_link_tag" do
     it "should include default in route" do
       helper.stylesheet_link_tag('example').should include('href="/stylesheets/default/example.css"')
